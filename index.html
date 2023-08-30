@@ -18,7 +18,11 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img :src="slides[activeSlide].image" alt="" />
+                    <img 
+                    :src="slides[activeSlide].image"   
+                    @mouseover = "autoPlayFunction()"
+                    @mouseout = "stopAutoPlayFunction()"
+                    alt="" />
                     <div class="text">
                         <h3> {{ slides[activeSlide].title }}</h3>
                         <p>

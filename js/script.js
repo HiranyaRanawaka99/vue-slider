@@ -53,7 +53,17 @@ createApp({
 
         clickThumb (index) {
             this.activeSlide = index;
-        }
+        },
+
+        autoPlayFunction () {
+            setInterval (() => {
+              this.goNext()
+            }, 3000);
+        },
+
+        stopAutoPlayFunction () {
+            clearInterval(this.goNext())
+        },
     }
     
 
