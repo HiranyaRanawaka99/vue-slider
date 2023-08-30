@@ -50,6 +50,10 @@ createApp({
                 this.activeSlide++
             }
         },
+
+        clickThumb (index) {
+            this.activeSlide = index;
+        }
     }
     
 
