@@ -61,9 +61,9 @@ createApp({
             }, 3000);
         },
 
-        stopAutoPlayFunction () {
-            clearInterval(this.goNext())
-        },
+        // stopAutoPlayFunction () {
+        //     clearInterval(this.goNext())
+        // },
     }
     
 

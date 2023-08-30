@@ -20,8 +20,8 @@
                 <div class="item">
                     <img 
                     :src="slides[activeSlide].image"   
-                    @mouseover = "autoPlayFunction()"
-                    @mouseout = "stopAutoPlayFunction()"
+                    @mouseover = "stopAutoPlayFunction()"
+                    @mouseout = "autoPlayFunction()"
                     alt="" />
                     <div class="text">
                         <h3> {{ slides[activeSlide].title }}</h3>
