@@ -35,39 +35,23 @@ createApp({
     },
 
     methods: {
-        // goPrev() {
-        //     if (this.activeSlide == 0) {
-        //         this.activeSlide = this.slides.length - 1
-        //     } else {
-        //         this.activeSlide--
-        //     }
-        // },
-        
-        // goNext() {
-        //     if (this.activeSlide == this.slides.length - 1) {
-        //         this.activeSlide = 0
-        //     } else {
-        //         this.activeSlide++
-        //     }
-        // },
-
-        goNext () {
-            if(this.activeSlide < this.slides.length -1 ) {
-                this.activeSlide++;
+        goPrev() {
+            if (this.activeSlide == 0) {
+                this.activeSlide = this.slides.length - 1
             } else {
-                this.activeSlide = 0;
+                this.activeSlide--
             }
         },
-
-        goPrev () {
-            if(this.activeSlide > 0) {
-                this.activeSlide--;
+        
+        goNext() {
+            if (this.activeSlide == this.slides.length - 1) {
+                this.activeSlide = 0
             } else {
-                this.activeSlide = this.slides.length -1  ;
+                this.activeSlide++
             }
-        }
-    },
+        },
+    }
+    
 
 
-
-    }).mount('#app')
+}).mount('#app')
